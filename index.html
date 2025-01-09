@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>QUANG MINH</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: url('https://wallpapers.com/images/featured/il54tctu0tr2owff.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        header p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        header a {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 30px;
+            background: #ff3636;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            z-index: 2;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        header a:hover {
+            background: white;
+            color: red;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .product-card p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .product-card a {
+            display: block;
+            margin: 10px auto 20px;
+            padding: 10px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            width: 80%;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .product-card a:hover {
+            background: #333;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Welcome to Nike</h1>
+            <p>Step into greatness with the latest collection.</p>
+            <a href="#products">Shop Now</a>
+        </div>
+    </header>
+
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.PaiTuTSmpiXkUjSIKQ6y-AHaHa?rs=1&pid=ImgDetMain" alt="Nike Shoe">
+            <h3>Nike Air Max</h3>
+            <p>$120</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i8.amplience.net/i/jpl/jd_369808_a?qlt=92" alt="Nike Shoe">
+            <h3>Nike React</h3>
+            <p>$140</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/11d7b28b-7526-4f15-a984-b9885aefc97e/custom-pegasus-40-by-you.png" alt="Nike Shoe">
+            <h3>Nike Pegasus</h3>
+            <p>$130</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.Gk59cz3Gr_4yV6PF1qZt0QHaEo?rs=1&pid=ImgDetMain" alt="Nike Shoe">
+            <h3>Nike ZoomX</h3>
+            <p>$150</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/R.f31aacd161edfa002c18899ea8792da9?rik=i%2fkVZXR%2bU5NVvg&pid=ImgRaw&r=0" alt="Nike Shoe">
+            <h3>Nike VaporFly</h3>
+            <p>$200</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.9nDbleEwUelKdHBTZa0jvwHaFP?rs=1&pid=ImgDetMain" alt="Nike Shoe">
+            <h3>Nike Blazer</h3>
+            <p>$110</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/z12golttmgjbp3zhxvvq/revolution-5-running-shoe-FDtTsz.png" alt="Nike Shoe">
+            <h3>Nike Revolution</h3>
+            <p>$90</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.2aFZzmoyhfba5Et9IJNHzAHaHa?rs=1&pid=ImgDetMain" alt="Nike Shoe">
+            <h3>Nike Infinity Run</h3>
+            <p>$160</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/d7a27f27-598d-49f4-9c53-ad8cdb6c2049/custom-phantom-luna-2-elite-by-you.png" alt="Nike Shoe">
+            <h3>Nike Phantom</h3>
+            <p>$180</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.QHL4tkz4cWYiARXYNmS6tQHaHa?w=800&h=800&rs=1&pid=ImgDetMain" alt="Nike Shoe">
+            <h3>Nike Free Run</h3>
+            <p>$100</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.UvMykKyMF3CfsaEHdZDj_QHaHa?rs=1&pid=ImgDetMain" alt="Nike Shoe">
+            <h3>Nike Court Vision</h3>
+            <p>$85</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/R.ee5acd53b130e27d6095d1018d279f07?rik=YHtMRGyPuk0sVw&pid=ImgRaw&r=0" alt="Nike Shoe">
+            <h3>Nike Flex Experience</h3>
+            <p>$70</p>
+            <a href="#">Buy Now</a>
+        </div>
+    </section>
+</body>
+</html>
